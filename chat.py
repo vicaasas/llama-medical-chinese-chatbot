@@ -50,7 +50,7 @@ def load_model(model_name, eight_bit=0, device_map="auto"):
         # load_in_8bit=False,
         # cache_dir="cache"
     )
-    # 使用lora 請將下面解註 而上面的 model_name 請用"FlagAlpha/Llama2-Chinese-7b-Chat"
+    # 使用lora 請將下面解註 而上面的 model_name 請用"FlagAlpha/Llama2-Chinese-7b-Chat" 並將 model 變數改成 model_llama
     # print(f"using lora vickt/LLama-chinese-med-chat-lora")
     # model = PeftModel.from_pretrained(
     #     model_llama,
