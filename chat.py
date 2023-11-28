@@ -50,11 +50,11 @@ def load_model(model_name, eight_bit=0, device_map="auto"):
         # load_in_8bit=False,
         # cache_dir="cache"
     )
-
-    # print(f"using lora ./lora_models/checkpoint-2400")
+    # 使用lora 請將下面解註
+    # print(f"using lora vickt/LLama-chinese-med-chat-lora")
     # model = PeftModel.from_pretrained(
     #     model_llama,
-    #     "./lora_models/checkpoint-2400",
+    #     "vickt/LLama-chinese-med-chat-loraa",
     #     torch_dtype=torch.float16,
     #     )
     model.to("cuda:1")
@@ -64,7 +64,7 @@ def load_model(model_name, eight_bit=0, device_map="auto"):
 # load_model("./pretrained/zh_tune")
 # load_model("./pretrained/en_tune")
 # load_model("./pretrained/en_tune_100")
-load_model("./pretrained")
+load_model("vickt/LLama-chinese-med-chat")
 # load_model("daryl149/llama-2-7b-chat-hf")
 # load_model("FlagAlpha/Llama2-Chinese-7b-Chat")
 # load_model("TheBloke/Llama-2-13B-fp16")
