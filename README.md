@@ -6,7 +6,7 @@
 | :------------------: | :----------------------------------- 
 |     `HealthCareMagic`          | [google driver](https://drive.google.com/file/d/1CY1yugiK7anSTQtYF_UmQvgx-rVqr_x5/view?usp=drive_link)
 
-本專案使用由
+而本專案使用由
 FlagAlpha 提供的 [Llama2-Chinese-7b-Chat](https://drive.google.com/file/d/17171E3S6HRH9tFwtnhItrS-Vhms7Ce9O/view?usp=drive_link)  進行 Full-tuning 與 Lora 的訓練
 
 我們也提供訓練完的 Checkpoint 可以進行進一步的研究
