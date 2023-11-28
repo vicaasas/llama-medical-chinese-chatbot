@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "chat DT upload",
+            "type": "python",
+            "request": "launch",
+            "program": "/work/u5516210/llama-medical-chinese-chatbot/train.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--model_name_or_path","FlagAlpha/Llama2-Chinese-7b-Chat",
+                // "--model_name_or_path","decapoda-research/llama-7b-hf",
+                // "--model_name_or_path","pretrained",
+                // "--cache_dir","./local_cache",
+                // "--data_path","./HealthCareMagic-100k.json",
+                "--data_path","/work/u5516210/Huatuo-Llama-Med-Chinese/HealthCareMagic-100k-ZHTW_Translate_change_name.json",
+                // "--bf16","False",
+                "--fp16","True",
+                // "--no_cuda","True",
+                "--output_dir","pretrained",
+                "--num_train_epochs","1",
+                "--max_steps","1",
+                "--per_device_train_batch_size","1",
+                "--per_device_eval_batch_size","4",
+                "--gradient_accumulation_steps","1",
+                "--evaluation_strategy","no",
+                "--save_strategy","steps",
+                "--save_steps","2000",
+                "--save_total_limit","1",
+                "--learning_rate","2e-6",
+                "--weight_decay","0.",
+                "--warmup_ratio","0.03",
+                "--lr_scheduler_type","cosine",
+                "--logging_steps","1",
+                // "--fsdp","full_shard offload auto_wrap",
+                // "--fsdp_transformer_layer_cls_to_wrap","LLaMADecoderLayer",
+                // "--tf32","False"
+            ],
+        },
+    ]
+}
