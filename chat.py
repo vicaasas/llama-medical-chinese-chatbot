@@ -54,7 +54,7 @@ def load_model(model_name, eight_bit=0, device_map="auto"):
     # print(f"using lora vickt/LLama-chinese-med-chat-lora")
     # model = PeftModel.from_pretrained(
     #     model_llama,
-    #     "vickt/LLama-chinese-med-chat-loraa",
+    #     "vickt/LLama-chinese-med-chat-lora",
     #     torch_dtype=torch.float16,
     #     )
     model.to("cuda:1")
